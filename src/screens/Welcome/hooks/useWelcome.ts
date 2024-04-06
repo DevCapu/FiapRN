@@ -1,7 +1,9 @@
+import {useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
 
 import {
   useModeColor,
+  usePermissions,
   useRemoteConfigStore,
   useTranslate,
 } from '@hooks';
@@ -18,7 +20,12 @@ export function useWelcome() {
   const featuresToggles = useRemoteConfigStore(
     state => state.featuresToggles,
   );
-  const {goToNews} = coordinator;
+  const {goToNews, goToMaps} = coordinator;
+  const {checkAndRequestLocation} = usePermissions();
+
+  useEffect(() => {
+    checkAndRequestLocation();
+  }, [checkAndRequestLocation]);
 
   return {
     t,
@@ -28,5 +35,6 @@ export function useWelcome() {
     colors: themeSchema().theme.colors,
     featuresToggles,
     goToNews,
+    goToMaps,
   };
 }

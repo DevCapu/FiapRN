@@ -10,7 +10,9 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load
 import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.flipper.ReactNativeFlipper
+import com.facebook.react.modules.network.OkHttpClientProvider
 import com.facebook.soloader.SoLoader
+import com.fiap2mobr.network.SSLPinningFactory
 
 class MainApplication : Application(), ReactApplication {
 
@@ -41,5 +43,6 @@ class MainApplication : Application(), ReactApplication {
       load()
     }
     ReactNativeFlipper.initializeFlipper(this, reactNativeHost.reactInstanceManager)
+      OkHttpClientProvider.setOkHttpClientFactory(SSLPinningFactory())
   }
 }

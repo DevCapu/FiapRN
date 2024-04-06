@@ -9,7 +9,7 @@ import {useSignInForm} from './hooks/useSignInForm';
 
 export function SignIn() {
   const {t, styles} = useSignIn();
-  const {signInSchema, handlePressSubmit, initialValues} =
+  const {signInSchema, handlePressSubmit, initialValues, formRef} =
     useSignInForm();
 
   return (
@@ -18,6 +18,7 @@ export function SignIn() {
       <Text style={styles.subTitle}>{t('sub_title')}</Text>
       <Separator size={12} />
       <Formik
+        innerRef={f => (formRef.current = f)}
         initialValues={initialValues}
         validationSchema={signInSchema}
         onSubmit={(values, {setSubmitting}) =>

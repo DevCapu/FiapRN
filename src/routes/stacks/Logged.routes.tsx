@@ -7,7 +7,7 @@ import React from 'react';
 import {TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import {News, Welcome} from '@screens';
+import {Maps, News, Welcome} from '@screens';
 import {themeSchema} from '@utils';
 
 const theme = themeSchema().theme;
@@ -15,11 +15,13 @@ const theme = themeSchema().theme;
 export const LoggedStackScreenNames = {
   Welcome: 'Welcome',
   News: 'News',
+  Maps: 'Maps',
 } as const;
 
 export type LoggedStackParams = {
   [LoggedStackScreenNames.Welcome]: undefined;
   [LoggedStackScreenNames.News]: undefined;
+  [LoggedStackScreenNames.Maps]: undefined;
 };
 
 const LoggedStackNavigator =
@@ -47,6 +49,19 @@ const NewsOptions: NativeStackNavigationOptions = {
   ),
 };
 
+const MapsOptions: NativeStackNavigationOptions = {
+  headerShown: true,
+  headerBackTitleVisible: false,
+  headerTintColor: theme.colors.white,
+  headerStyle: {
+    backgroundColor: theme.colors.primary,
+  },
+  headerTitleStyle: {
+    fontFamily: theme.fonts.RobotoMedium,
+  },
+  title: 'Mapa',
+};
+
 export const LoggedStack = (
   <>
     <LoggedStackNavigator.Screen
@@ -57,6 +72,11 @@ export const LoggedStack = (
       name={LoggedStackScreenNames.News}
       component={News}
       options={NewsOptions}
+    />
+    <LoggedStackNavigator.Screen
+      name={LoggedStackScreenNames.Maps}
+      component={Maps}
+      options={MapsOptions}
     />
   </>
 );

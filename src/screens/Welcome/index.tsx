@@ -18,6 +18,7 @@ export function Welcome() {
     colors,
     featuresToggles,
     goToNews,
+    goToMaps,
   } = useWelcome();
 
   return (
@@ -34,6 +35,13 @@ export function Welcome() {
         <Text style={styles.buttonText}>
           {t('welcome_access_system')}
         </Text>
+      </TouchableOpacity>
+      <Separator size={12} />
+      <TouchableOpacity
+        onPress={goToMaps}
+        activeOpacity={0.7}
+        style={styles.button}>
+        <Text style={styles.buttonText}>Visualizar mapa</Text>
       </TouchableOpacity>
       {featuresToggles[
         remoteKeysName.shouldUseLanguage
