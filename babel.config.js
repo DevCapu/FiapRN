@@ -5,7 +5,14 @@ module.exports = {
       'module-resolver',
       {
         root: ['.'],
-        extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
+        extensions: [
+          '.ios.js',
+          '.android.js',
+          '.js',
+          '.ts',
+          '.tsx',
+          '.json',
+        ],
         alias: {
           '@screens': './src/screens',
           '@components': './src/components',
@@ -13,6 +20,9 @@ module.exports = {
           '@assets': './src/assets',
           '@locale': './src/locale',
           '@storage': './src/storage',
+          '@routes': './src/routes',
+          '@analytics': './src/analytics',
+          '@services': './src/services',
           '@hooks': './src/hooks',
         },
       },

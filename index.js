@@ -2,8 +2,20 @@
  * @format
  */
 
+import JailBreakLib from 'jail-monkey';
 import {AppRegistry} from 'react-native';
-import App from './src';
-import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => App);
+import {JailBreak} from '@components';
+
+import {name as appName} from './app.json';
+import App from './src';
+
+const jailBreakHasDetected = __DEV__
+  ? false
+  : JailBreakLib.isJailBroken() ||
+    JailBreakLib.trustFall() ||
+    JailBreakLib.canMockLocation();
+
+AppRegistry.registerComponent(appName, () =>
+  jailBreakHasDetected ? JailBreak : App,
+);

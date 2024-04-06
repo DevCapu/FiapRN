@@ -12,12 +12,12 @@ export const stylesWithTheme = (theme: themeType) =>
       padding: 40,
     },
     title: {
-      fontFamily: theme.fonts.RobotoBlack,
+      fontFamily: 'Roboto-Black',
       fontSize: 36,
       color: theme.colors.text,
     },
     subTitle: {
-      fontFamily: theme.fonts.RobotoMedium,
+      fontFamily: 'Roboto-Medium',
       fontSize: 18,
       color: theme.colors.text,
     },
@@ -31,8 +31,8 @@ export const stylesWithTheme = (theme: themeType) =>
       alignItems: 'center',
     },
     buttonText: {
-      fontFamily: theme.fonts.RobotoBold,
-      color: theme.colors.primary,
+      fontFamily: 'Roboto-Bold',
+      color: theme.colors.text,
       fontSize: 14,
     },
     chooseArea: {
@@ -40,7 +40,7 @@ export const stylesWithTheme = (theme: themeType) =>
       alignItems: 'center',
     },
     chooseText: {
-      fontFamily: theme.fonts.RobotoRegular,
+      fontFamily: 'Roboto-regular',
       color: theme.colors.text,
     },
     imageArea: {
@@ -50,12 +50,12 @@ export const stylesWithTheme = (theme: themeType) =>
     image: {
       width: 36,
       height: 36,
-      borderRadius: 18,
+      borderRadius: 20,
     },
     icon: {
       width: 36,
       height: 36,
-      borderRadius: 18,
+      borderRadius: 20,
       justifyContent: 'center',
       alignItems: 'center',
     },

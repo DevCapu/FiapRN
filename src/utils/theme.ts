@@ -20,6 +20,7 @@ export function themeSchema() {
   const lightMode = {
     colors: {
       primary: '#ed145b',
+      primaryDark: '#ba1247',
       background: '#454545',
       text: defaultColors.black,
       buttonBackground: defaultColors.white,
@@ -29,9 +30,10 @@ export function themeSchema() {
   const darkMode = {
     colors: {
       primary: '#e21d5f',
+      primaryDark: '#1e1e1e',
       background: '#bababa',
       text: '#ededed',
-      buttonBackground: '#050505',
+      buttonBackground: lightMode.colors.primaryDark,
     },
   };
 

@@ -9,6 +9,9 @@
       "@assets": ["src/assets"],
       "@locale": ["src/locale"],
       "@storage": ["src/storage"],
+      "@routes": ["src/routes"],
+      "@analytics": ["src/analytics"],
+      "@services": ["src/services"],
       "@hooks": ["src/hooks"]
     }
   }

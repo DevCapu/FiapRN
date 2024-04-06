@@ -1,0 +1,7 @@
+{
+  "signin_email_input_error": "Por favor, digite um e-mail válido",
+  "signin_input_error_required": "O campo não pode estar em branco",
+  "signin_email_input": "Digite seu e-mail",
+  "signin_password_input": "Digite sua senha",
+  "signin_button_signup": "Não possui cadastro? Clique aqui"
+}

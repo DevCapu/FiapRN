@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1030746537973",
+    "project_id": "fiap-2mobr-app",
+    "storage_bucket": "fiap-2mobr-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030746537973:android:6fe59df998524424402abc",
+        "android_client_info": {
+          "package_name": "com.fiap2mobr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5Kq5aKGNdJ9Izs47FxbDdbyYlD3SgxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030746537973:android:7538e164d79ad036402abc",
+        "android_client_info": {
+          "package_name": "com.mobrexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5Kq5aKGNdJ9Izs47FxbDdbyYlD3SgxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
