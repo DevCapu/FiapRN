@@ -11,9 +11,9 @@ const Paulo = () => {
 	  <View style={styles.container}>
 		<View style={styles.header}>
 		  <Image source={{ uri: 'https://i.ibb.co/FVbfCyN/paulo.jpg' }} style={styles.image} />
-		  <Text style={styles.name}>Paulo George M. Richa</Text>
+		  <Text style={[styles.name, styles.textBackground]}>Paulo George M. Richa</Text>
 		</View>
-		<Text style={styles.bio}>Desenvolvedor Mobile Android Java e Kotlin com experiência em projetos utilizando boas práticas, metodologia ágil (Scrum, MVC), controle de versão distribuído (Git), integração com APIs REST e Webservices, banco de dados relacionais e não relacionais, libs Jetpack e Material Design, Arquiteturas MVP Clean e MVVM.</Text>
+		<Text style={[styles.bio, styles.textBackground]}>Desenvolvedor Mobile Android Java e Kotlin com experiência em projetos utilizando boas práticas, metodologia ágil (Scrum, MVC), controle de versão distribuído (Git), integração com APIs REST e Webservices, banco de dados relacionais e não relacionais, libs Jetpack e Material Design, Arquiteturas MVP Clean e MVVM.</Text>
 		<View style={styles.buttonContainer}>
 		  <Button title="GitHub" onPress={() => Linking.openURL('https://github.com/pauloricha')} />
 		</View>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   background: {
 	flex: 1,
 	resizeMode: 'cover',
-  backgroundColor: 'rgba(0,0,0,0.5)',
+	backgroundColor: 'rgba(0,0,0,0.5)',
   },
   container: {
 	flex: 1,
@@ -60,6 +60,12 @@ const styles = StyleSheet.create({
   buttonContainer: {
 	width: '100%',
 	marginVertical: 8,
+  },
+  textBackground: {
+	backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fundo opaco
+	color: 'white', // Cor do texto para contraste
+	padding: 8, // Espaçamento interno
+	borderRadius: 4, // Bordas arredondadas
   },
 });
 
