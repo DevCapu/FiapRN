@@ -38,38 +38,6 @@ const MembersStackNavigator = createNativeStackNavigator<MembersStackParams>();
 function logOut() {
   auth().signOut();
 }
-
-const NewsOptions: NativeStackNavigationOptions = {
-  headerShown: true,
-  headerBackTitleVisible: false,
-  headerTintColor: theme.colors.white,
-  headerStyle: {
-    backgroundColor: theme.colors.primary,
-  },
-  headerTitleStyle: {
-    fontFamily: theme.fonts.RobotoMedium,
-  },
-  title: 'Notícias',
-  headerRight: ({tintColor}) => (
-    <TouchableOpacity onPress={logOut} activeOpacity={0.7}>
-      <Icon name="power-off" size={22} color={tintColor} />
-    </TouchableOpacity>
-  ),
-};
-
-const MapsOptions: NativeStackNavigationOptions = {
-  headerShown: true,
-  headerBackTitleVisible: false,
-  headerTintColor: theme.colors.white,
-  headerStyle: {
-    backgroundColor: theme.colors.primary,
-  },
-  headerTitleStyle: {
-    fontFamily: theme.fonts.RobotoMedium,
-  },
-  title: 'Mapa',
-};
-
 export const MembersStack = (
   <>
      <MembersStackNavigator.Screen
@@ -84,12 +52,10 @@ export const MembersStack = (
     <MembersStackNavigator.Screen
       name={MembersStackScreenNames.Davi}
       component={Davi}
-      options={NewsOptions}
     />
     <MembersStackNavigator.Screen
       name={MembersStackScreenNames.Paulo}
       component={Paulo}
-      options={MapsOptions}
     />
     <MembersStackNavigator.Screen
         name={MembersStackScreenNames.Bruno}
