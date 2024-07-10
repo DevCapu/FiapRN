@@ -1,7 +1,7 @@
 /**
  * @format
  */
-
+import 'react-native-gesture-handler';
 import JailBreakLib from 'jail-monkey';
 import {AppRegistry} from 'react-native';
 

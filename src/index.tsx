@@ -9,6 +9,7 @@ import '@locale';
 import {Routes} from '@routes';
 
 import {useApp} from './hooks/useApp';
+import DrawerNavigator from './routes/stacks/Drawer';
 
 const queryClient = new QueryClient();
 
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Routes />
+      <DrawerNavigator />
     </QueryClientProvider>
   );
 }

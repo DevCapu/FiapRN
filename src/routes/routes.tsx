@@ -25,20 +25,9 @@ const NavigatorOptions: NativeStackNavigationOptions = {
 };
 
 export const Routes = () => {
-  const {onReady, onScreenChange, user, initializing} = useRoutes();
-
-  if (initializing) {
-    return <Loading />;
-  }
-
   return (
-    <NavigationContainer
-      ref={navigationRef}
-      onReady={onReady}
-      onStateChange={onScreenChange}>
       <RootStack.Navigator screenOptions={NavigatorOptions}>
-        {user ? LoggedStack : AuthStack}
+        { LoggedStack }
       </RootStack.Navigator>
-    </NavigationContainer>
   );
 };
