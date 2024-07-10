@@ -7,7 +7,7 @@ const Bruno = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image source={{ uri: 'https://avatars.githubusercontent.com/u/19232807?v=4' }} style={styles.image} />
+        <Image source={{ uri: 'https://avatars.githubusercontent.com/u/81889362?v=4' }} style={styles.image} />
         <Text style={styles.name}>Bruno Moreno Borges</Text>
       </View>
       <Text style={styles.bio}>Graduado em Ciência da Computação e atualmente estou cursando um MBA em Desenvolvimento Mobile. Sou apaixonado por tecnologia, vejo nela a possibilidade de melhorar a vida das pessoas além de uni-las.</Text>
