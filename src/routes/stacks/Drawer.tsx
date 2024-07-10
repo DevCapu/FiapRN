@@ -6,6 +6,7 @@ import { Routes } from '../routes';
 import { useRoutes } from '../useRoutes';
 import { Loading } from 'src/screens/News/components';
 import { navigationRef } from '../navigation';
+import { Membros } from 'src/screens/Membros';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,6 +24,7 @@ const DrawerNavigator = () => {
       onStateChange={onScreenChange}>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={Routes} />
+        <Drawer.Screen name="Membros" component={Membros} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
