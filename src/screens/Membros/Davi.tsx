@@ -16,7 +16,7 @@ const Davi = () => {
             <View style={styles.buttonContainer}>
               <Button 
                 title="GitHub" 
-                onPress={() => Linking.openURL('https://github.com/devcapu')} 
+                onPress={() => Linking.openURL('https://github.com/davipinedo')} 
                 color="#78D374"
               />
             </View>
@@ -24,15 +24,15 @@ const Davi = () => {
             <View style={styles.buttonContainer}>
               <Button 
                 title="LinkedIn" 
-                onPress={() => Linking.openURL('https://www.linkedin.com/in/devcapu/')} 
+                onPress={() => Linking.openURL('https://www.linkedin.com/in/davi-pinedo-de-souza/')} 
                 color="#78D374"
               />
             </View>
           </View>
         </View>
-        <Text style={styles.name}>Davi Moreno Borges</Text>
+        <Text style={styles.name}>Davi Pinedo</Text>
         <View style={styles.bioContainer}>
-          <Text style={styles.bio}>Graduado em Ciência da Computação e atualmente estou cursando um MBA em Desenvolvimento Mobile. Sou apaixonado por tecnologia, vejo nela a possibilidade de melhorar a vida das pessoas além de uni-las.</Text>
+          <Text style={styles.bio}>Comecei a trabalhar com desenvolvimento Web com seis meses de faculdade, após uma grande jornada adquirindo conhecimento e experiencia, aceitei o desafio de entrar para uma multinacional, onde aprendi novas tecnologias como o desenvolvimento de aplicativos Android.</Text>
         </View>
       </View>
     </ImageBackground>
