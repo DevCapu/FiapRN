@@ -93,7 +93,6 @@ export const MembersStack = (
     />
     <MembersStackNavigator.Screen
         name={MembersStackScreenNames.Bruno}
-        component={Bruno}
-        options={MapsOptions}/>
+        component={Bruno}/>
   </>
 );
